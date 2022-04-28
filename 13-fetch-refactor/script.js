@@ -1,34 +1,4 @@
-// // &---- Fetch ----
-// const searchButton = document.querySelector('.search-button');
-// searchButton.addEventListener('click', function () {
-// 	const inputKeyword = document.querySelector('.input-keyword');
-// 	fetch('http://www.omdbapi.com/?apikey=8b5459e2&s=' + inputKeyword.value)
-// 		.then((res) => res.json())
-// 		.then((res) => {
-// 			const movies = res.Search;
-// 			let cards = '';
-// 			movies.forEach((m) => {
-// 				cards += showCards(m);
-// 			});
-// 			const movieContainer = document.querySelector('.movie-container');
-// 			movieContainer.innerHTML = cards;
 
-// 			// &---- Saat detail diklik ----
-// 			const modalDetailButton = document.querySelectorAll('.modal-detail-button');
-// 			modalDetailButton.forEach((btn) => {
-// 				btn.addEventListener('click', function () {
-// 					const imdbid = this.dataset.imdbid;
-// 					fetch('http://www.omdbapi.com/?apikey=8b5459e2&i=' + imdbid)
-// 						.then((res) => res.json())
-// 						.then((m) => {
-// 							const movieDetail = showMovieDetail(m);
-// 							const modalBody= document.querySelector('.modal-body')
-// 							modalBody.innerHTML=movieDetail
-// 						});
-// 				});
-// 			});
-// 		});
-// });
 
 // &---- Cari diklik ----
 const searchButton = document.querySelector('.search-button');
