@@ -32,8 +32,8 @@ $('.search-button').on('click', function () {
 
 function showCards(m) {
 	return /*html*/ ` 
-                <div class="col-md-4 my-5">
-					<div class="card" style="width: 18rem">
+                <div class="col my-5">
+					<div class="card h-100" style="width: 18rem">
 						<img src="${m.Poster}" class="card-img-top" alt="..." />
 						<div class="card-body">
 							<h5 class="card-title">${m.Title}</h5>
