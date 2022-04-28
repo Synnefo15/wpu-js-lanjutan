@@ -1,32 +1,4 @@
-// $('.search-button').on('click', function () {
-// 	$.ajax({
-// 		url: 'http://www.omdbapi.com/?apikey=8b5459e2&s='+$('.input-keyword').val(),
-// 		success: (result) => {
-// 			const movies = result.Search;
-// 			let cards = '';
-// 			movies.forEach((m) => {
-// 				cards += showCards(m);
-// 			});
-// 			$('.movie-container').html(cards);
-// 			// &---- Tombol detail diklik ----
-// 			$('.modal-detail-button').on('click', function () {
-// 				$.ajax({
-// 					url: 'http://www.omdbapi.com/?apikey=8b5459e2&i=' + $(this).data('imdbid'),
-// 					success: (m) => {
-// 						const detail = showMovieDetail(m);
-// 						$('.modal-body').html(detail); // % memasukkan ke html
-// 					},
-// 					error: (e) => {
-// 						console.log(e.responseText);
-// 					},
-// 				});
-// 			});
-// 		},
-// 		error: (e) => {
-// 			console.log(e.responseText);
-// 		},
-// 	});
-// })
+
 
 // &---- Fetch ----
 const searchButton = document.querySelector('.search-button');
